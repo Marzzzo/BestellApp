@@ -8,10 +8,6 @@ body {
   height: 20px;
 }
 
-.color_price {
-  color: orange;
-}
-
 .d_none {
   display: none;
 }
@@ -29,7 +25,9 @@ button {
   box-shadow: 0 2px #999;
 }
 
-button:hover {background-color: rgb(118, 239, 255)}
+button:hover {
+  background-color: rgb(118, 239, 255);
+}
 
 button:active {
   background-color: rgb(112, 223, 238);

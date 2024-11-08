@@ -32,6 +32,8 @@ header {
   width: 300px;
   flex-grow: 1;
   padding: 2px;
+  height: 100vh;
+  position: sticky;
 }
 
 .basket {
@@ -39,17 +41,21 @@ header {
   height: 450px;
   background-color: #124658;
   color: white;
-  position: sticky;
   top: 0;
   text-align: center;
   box-shadow: inset 0px 0px 6px 0px orange;
+}
+
+.box_shadow {
+  box-shadow: inset 0px 0px 6px 0px orange;
+  padding: 5px;
 }
 
 .basket_section {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 0 16px;
+  padding: 10px 16px;
 }
 
 .basket_amount {

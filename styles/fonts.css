@@ -41,5 +41,10 @@ p {
 span {
   color: white;
   font-family: "Times New Roman", Times, serif;
-  filter: drop-shadow(3px 4px 1px black);
+
+}
+
+.color_price {
+  color: orange;
+ 
 }

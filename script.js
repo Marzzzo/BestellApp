@@ -10,7 +10,10 @@ function renderDishesTemplate() {
   }
 }
 
-function addToBasket() {
-  
-}
+function addToBasket(dishIndex) {
+  let basketSection = document.getElementById("basketSection");
 
+  basketDishes.push(myDishes[dishIndex]);
+
+  basketSection.innerHTML += basketTemplate(basketDishes.length -1);
+}
