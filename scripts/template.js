@@ -24,8 +24,13 @@ function basketTemplate(dishIndex) {
                             </div>
                             <div class="basket_price">
                                 <span id="dishPrice" class="color_price">${formattedPrice}</span>
-                                <img class="trash" src="./assets/icons/trash.png">
+                                <img onclick="deleteBasket(${dishIndex})" class="trash" src="./assets/icons/trash.png">
                             </div>
                         </div>
                       </div>`;
+}
+
+function priceTemplate(totalPrice) {
+  return `<h5>Gesamtpreis: <b>${totalPrice.toFixed(2).replace('.', ',')} €</b></h5>
+            <button>Bestellen</button>`;
 }
