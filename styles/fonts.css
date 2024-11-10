@@ -1,0 +1,48 @@
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  filter: drop-shadow(3px 4px 1px black);
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  filter: drop-shadow(3px 4px 1px black);
+}
+
+h4 {
+  margin: 0;
+  font-size: 24px;
+  color: rgb(215 198 142);
+  filter: drop-shadow(3px 4px 1px black);
+}
+
+h5 {
+  margin: 0;
+  padding-bottom: 16px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+b {
+  color: orangered;
+}
+
+p {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+
+span {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.color_price {
+  color: orange;
+}

@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Eagle Lake', serif;
+}
+
+.copyright {
+  height: 20px;
+}
+
+.d_none {
+  display: none;
+}
+
+button {
+  padding: 10px 40px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: rgb(28, 228, 255);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 2px #999;
+}
+
+button:hover {
+  background-color: rgb(118, 239, 255);
+}
+
+button:active {
+  background-color: rgb(112, 223, 238);
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}

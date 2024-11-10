@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BestellApp</title>
+
+    <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/basket.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body onload="init()">
+    <header>
+        <img class="header_logo" src="./assets/img/Logo.png" alt="">
+    </header>
+
+    <main class="content_wrapper">
+        <div class="content">
+            <section class="left_content">
+                <img class="spaghetti_img" src="./assets/img/spaghetti.png" alt="spaghetti-image">
+                <img class="pasta_img" src="./assets/img/pasta_logo.png" alt="">
+            </section>
+
+            <section class="info_restaurant">
+                <h1>Pasta Al Dente</h1>
+                <div class="assessment">
+                    Bewertung <b>5</b> von <b>5</b><br>
+                    <img src="./assets/icons/star_icon.png">
+                    <img src="./assets/icons/star_icon.png">
+                    <img src="./assets/icons/star_icon.png">
+                    <img src="./assets/icons/star_icon.png">
+                    <img src="./assets/icons/star_icon.png">
+                </div>
+            </section>
+
+            <section class="dishes_section" id="dishesSection">
+                <!-- all dishes out of myDishes are rendered here -->
+            </section>
+        </div>
+
+        <section class="basket_wrapper">
+            <div class="basket">
+                <div>
+                    <h3>Warenkorb:</h3>
+                </div>
+
+                <div id="placeholder">
+                    Füge deine Gerichte hinzu
+                </div>
+
+
+                <section class="basket_section" id="basketSection">
+                    <!--all dishes push into the baket-->
+                </section>
+
+                <div class="section_total_price">
+                    <h5>Gesamtpreis: <b>5.99 €</b></h5>
+                    <button>Bestellen</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer><img class="copyright" src="./assets/icons/copyright-1345865_640.png" alt="">Marco Burdick 2024 <img
+            src="./assets/icons/favicon.ico"></footer>
+</body>
+
+</html>
