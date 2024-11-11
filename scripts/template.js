@@ -32,5 +32,11 @@ function basketTemplate(dishIndex) {
 
 function priceTemplate(totalPrice) {
   return `<h5>Gesamtpreis: <b>${totalPrice.toFixed(2).replace('.', ',')} €</b></h5>
-            <button>Bestellen</button>`;
+            <button onclick="orderMessage()">Bestellen</button>`;
+}
+
+function orderTemplate() {
+  return `<div class="order">
+            <span>Die Testbestellung wurde erfolgreich aufgegeben.</span>
+            </div>`;
 }

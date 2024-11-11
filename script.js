@@ -14,11 +14,12 @@ function renderDishesTemplate() {
 
 function renderBasket() {
   let basketSection = document.getElementById('basketSection');
-  basketSection.innerHTML = '';
+  basketSection.innerHTML = [];
   for (let dishIndex = 0; dishIndex < basketDishes.length; dishIndex++) {
-    basketSection.innerHTML += basketTemplate[dishIndex];
+    basketSection.innerHTML += basketTemplate(dishIndex);
   }
   getTotalPrice();
+  basketIsEmpty();
 }
 
 // Gericht wird dem Warenkorb hinzugefügt.
@@ -55,6 +56,10 @@ function reduceDishByOne(dishIndex) {
     let amount = document.querySelectorAll('#dishAmount')[dishIndex];
     amount.innerText = `${basketDishes[dishIndex].amount}x`;
     getTotalPrice();
+  } else {
+    basketDishes[dishIndex].amount <= 1;
+    deleteBasket();
+    renderBasket();
   }
 }
 
@@ -65,7 +70,12 @@ function getTotalPrice() {
   }
   let priceSection = document.getElementById('priceSection');
   priceSection.innerHTML = priceTemplate(totalPrice);
-  if (totalPrice === 0) priceSection.classList.add('d_none');
+  if (totalPrice === 0) {
+    priceSection.classList.add('d_none');
+    basketIsEmpty();
+  } else {
+    priceSection.classList.remove('d_none');
+  }
 }
 
 function getIndexById(dishIndex) {
@@ -79,6 +89,7 @@ function dishNoExist(existingDishIndex) {
 function deleteBasket(dishIndex) {
   basketDishes.splice(dishIndex, 1);
   renderBasket();
+  getTotalPrice();
 }
 
 function basketIsEmpty() {
@@ -88,4 +99,16 @@ function basketIsEmpty() {
   } else {
     basketPlaceholder.classList.add('d_none');
   }
+}
+
+function orderMessage() {
+  let basketWrapper = document.getElementById('basket_wrapper');
+  basketWrapper.innerHTML = '';
+  basketDishes = [];
+  basketWrapper.innerHTML = orderTemplate();
+  window.setTimeout(reloadWindow, 2000);
+}
+
+function reloadWindow() {
+  window.location.reload();
 }
