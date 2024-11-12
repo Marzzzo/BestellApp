@@ -15,7 +15,7 @@ function renderDishesTemplate() {
 
 function renderBasket() {
   let basketSection = document.getElementById('basketSection');
-  basketSection.innerHTML = [];
+  basketSection.innerHTML = '';
   for (let dishIndex = 0; dishIndex < basketDishes.length; dishIndex++) {
     basketSection.innerHTML += basketTemplate(dishIndex);
   }
@@ -58,9 +58,8 @@ function reduceDishByOne(dishIndex) {
     amount.innerText = `${basketDishes[dishIndex].amount}x`;
     getTotalPrice();
   } else {
-    basketDishes[dishIndex].amount <= 1;
-    deleteBasket();
-    renderBasket();
+    deleteBasket(dishIndex);
+    getTotalPrice();
   }
 }
 
