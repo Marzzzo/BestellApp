@@ -1,0 +1,55 @@
+@media (min-width: 901px) {
+  .basket_wrapper {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .basket_wrapper {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content_visible {
+    display: none;
+  }
+
+  .basket_responsive {
+    display: flex;
+    padding-bottom: 16px;
+    background-color: rgb(18, 70, 88);
+    box-shadow: inset 0px 0px 8px 0px black;
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .p_footer {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .copyright {
+    height: 15px;
+  }
+
+  .img_footer {
+    height: 36px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+
+  .assessment {
+    font-size: 12px;
+  }
+}

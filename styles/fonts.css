@@ -38,9 +38,19 @@ p {
   font-size: 24px;
 }
 
+.p_footer {
+  color: black;
+}
+
 span {
   color: white;
   font-family: 'Times New Roman', Times, serif;
+}
+
+.span_basket {
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 24px;
 }
 
 .color_price {

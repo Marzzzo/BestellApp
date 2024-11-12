@@ -1,3 +1,4 @@
+let openBasket = false;
 let totalPrice = 0;
 
 function init() {
@@ -107,6 +108,19 @@ function orderMessage() {
   basketDishes = [];
   basketWrapper.innerHTML = orderTemplate();
   window.setTimeout(reloadWindow, 2000);
+}
+
+function responsiveBasket() {
+  let basketContent = document.getElementById('content');
+  let basketWrapper = document.getElementById('basket_wrapper');
+  basketContent.classList.toggle('content_visible');
+  if (openBasket == false) {
+    basketWrapper.style.display = 'flex';
+    openBasket = true;
+  } else if (openBasket == true) {
+    basketWrapper.style.display = 'none';
+    openBasket = false;
+  }
 }
 
 function reloadWindow() {

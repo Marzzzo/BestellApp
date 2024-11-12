@@ -12,25 +12,45 @@ body {
   display: none;
 }
 
-button {
+.button {
   padding: 10px 40px;
   font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   cursor: pointer;
   outline: none;
   color: black;
   background-color: rgb(28, 228, 255);
+  box-shadow: inset 0px 0px 8px 0px black;
   border: none;
   border-radius: 15px;
   box-shadow: 0 2px #999;
 }
 
-button:hover {
+.button:hover {
   background-color: rgb(118, 239, 255);
 }
 
-button:active {
+.button:active {
   background-color: rgb(112, 223, 238);
   box-shadow: 0 1px #666;
   transform: translateY(2px);
+}
+
+.button_responsive {
+  width: 100%;
+  padding: 10px 40px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: rgb(28, 228, 255);
+  box-shadow: inset 0px 0px 8px 0px black;
+  border: none;
+}
+
+.button_responsive:hover {
+  background-color: rgb(118, 239, 255);
 }

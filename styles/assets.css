@@ -35,3 +35,7 @@
   border-radius: 50%;
   border: 3px solid rgb(0 190 255);
 }
+
+.img_footer {
+  height: 50px;
+}

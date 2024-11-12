@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/basket.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
 
     <script src="./scripts/db.js"></script>
     <script src="./scripts/template.js"></script>
@@ -28,7 +29,7 @@
     </header>
 
     <main class="content_wrapper">
-      <div class="content">
+      <div id="content" class="content">
         <section class="left_content">
           <img class="spaghetti_img" src="./assets/img/spaghetti.png" alt="spaghetti-image" />
           <img class="pasta_img" src="./assets/img/pasta_logo.png" alt="" />
@@ -57,7 +58,7 @@
             <h3>Warenkorb:</h3>
           </div>
 
-          <div id="placeholder">Füge deine Gerichte hinzu !</div>
+          <div id="placeholder" class="span_basket">Füge deine Gerichte hinzu !</div>
 
           <section class="basket_section" id="basketSection">
             <!--all dishes push into the baket-->
@@ -67,9 +68,12 @@
         </div>
       </section>
     </main>
-
+    <div class="d_none basket_responsive">
+      <button class="button_responsive" onclick="responsiveBasket()">Warenkorb</button>
+    </div>
     <footer>
-      <img class="copyright" src="./assets/icons/copyright-1345865_640.png" alt="" />Marco Burdick 2024 <img src="./assets/icons/favicon.ico" />
+      <p class="p_footer"><img class="copyright" src="./assets/icons/copyright-1345865_640.png" /> Marco Burdick 2024</p>
+      <img class="img_footer" src="./assets/icons/favicon.ico" />
     </footer>
   </body>
 </html>
