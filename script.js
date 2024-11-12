@@ -107,7 +107,6 @@ function orderMessage() {
   basketWrapper.innerHTML = '';
   basketDishes = [];
   basketWrapper.innerHTML = orderTemplate();
-  window.setTimeout(reloadWindow, 2000);
 }
 
 function responsiveBasket() {

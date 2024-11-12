@@ -5,6 +5,7 @@
   padding: 2px;
   position: sticky;
   top: 0;
+  justify-content: center;
 }
 
 .basket {
