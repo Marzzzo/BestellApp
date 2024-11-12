@@ -89,7 +89,6 @@ function dishNoExist(existingDishIndex) {
 function deleteBasket(dishIndex) {
   basketDishes.splice(dishIndex, 1);
   renderBasket();
-  getTotalPrice();
 }
 
 function basketIsEmpty() {

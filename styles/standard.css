@@ -29,6 +29,7 @@ body {
 
 .button:hover {
   background-color: rgb(118, 239, 255);
+  transform: scale(1.02);
 }
 
 .button:active {
@@ -53,4 +54,5 @@ body {
 
 .button_responsive:hover {
   background-color: rgb(118, 239, 255);
+  transform: scale(1.02);
 }

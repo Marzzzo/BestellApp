@@ -2,7 +2,10 @@
   cursor: pointer;
   height: 40px;
   filter: drop-shadow(2px 2px 0px black);
-  transform: translateY(4px);
+}
+
+.add_icon:hover {
+  transform: scale(1.1);
 }
 
 .icon_basket {
@@ -10,9 +13,17 @@
   height: 26px;
 }
 
+.icon_basket:hover {
+  transform: scale(1.1);
+}
+
 .trash {
   height: 32px;
   cursor: pointer;
+}
+
+.trash:hover {
+  transform: scale(1.1);
 }
 
 .header_logo {
