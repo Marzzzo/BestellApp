@@ -6,7 +6,6 @@ function init() {
 }
 
 function renderDishesTemplate() {
-  // Inserts the menus into the HTML.
   let dishesRef = document.getElementById('dishesSection');
   for (let dishIndex = 0; dishIndex < myDishes.length; dishIndex++) {
     dishesRef.innerHTML += dishesTemplate(dishIndex);
@@ -23,7 +22,7 @@ function renderBasket() {
   basketIsEmpty();
 }
 
-// Gericht wird dem Warenkorb hinzugefügt.
+
 function addToBasket(dishIndex) {
   let basketSection = document.getElementById('basketSection');
   let basketPlaceholder = document.getElementById('placeholder');
@@ -38,7 +37,7 @@ function addToBasket(dishIndex) {
   getTotalPrice();
 }
 
-// Gericht wird im Warenkorb um 1 erhöt.
+
 function increaseDishByOne(dishIndex) {
   basketDishes[dishIndex].amount += 1;
   let price = document.querySelectorAll('#dishPrice')[dishIndex];
@@ -48,7 +47,7 @@ function increaseDishByOne(dishIndex) {
   getTotalPrice();
 }
 
-// Gericht wird um 1 reduziert.
+
 function reduceDishByOne(dishIndex) {
   if (basketDishes[dishIndex].amount > 1) {
     basketDishes[dishIndex].amount -= 1;
